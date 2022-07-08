@@ -1,0 +1,105 @@
+/* 
+    ? The styles are listed as this form:
+    * 0.- General
+    * 1.- Hero-section
+    * 2.- Chat section
+*/
+
+/* General */
+
+:root{
+    --honewdew: #eefff0;
+    --orange: #f06449;
+    --mimipink: #FED4E7;
+    --charcoal-4: #141115;
+    --charcoal-3: #312F31;
+    --charcoal-2: #4D4D4D;
+    --charcoal-1: #A3A6A1;
+    --mintcream: #F8FFF4;
+    --margin-msg: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dead-space{
+    content: "";
+}
+/* /General */
+
+/* Hero-section */
+.side-a{
+    background-color: var(--honewdew);
+    height: 100vh;
+}
+.side-b{
+    background-color: var(--charcoal-4);
+    height: 100vh;
+}
+
+.hero-circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    position: relative;
+}
+
+img.hero-img {
+    width: 350px;
+    /* filter: grayscale(100%); */
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(2px 2px 2px #666666) grayscale(100%);
+    filter: drop-shadow(1px 1px 1px #666666) grayscale(100%);
+}
+
+/* /Hero-section */
+
+/* Chat Section */
+.container-chat{
+    content: "";
+    height: 90%;
+    width: 85%;
+    background-color: var(--charcoal-3);
+    border-radius: 9px;
+}
+
+.wa-bg{
+    background-image: url(/assets/img/wa-bg.png);
+}
+
+.chat-header{
+    background-color: var(--charcoal-2);
+    height: 6.66%;
+    border-radius: inherit;
+}
+
+.img-chat{
+    width: 45px;
+}
+
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.msg{
+    padding: 5px 0px 0px 15px;
+    margin-left: var(--margin-msg);
+    background-color: var(--charcoal-1);
+    height: 50px;
+    width: 363px;
+    border-radius: 50px;
+    font-size: 0.775rem;
+}
+
+
+.msg.me{
+    margin-left: 45%;
+    height: 50px;
+    background-color: #eefff0bf;
+}
+/* /Chat Section */
