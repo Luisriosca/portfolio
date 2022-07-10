@@ -3,11 +3,12 @@
     * 0.- General
     * 1.- Hero-section
     * 2.- Chat section
+    * 3.- Services section
 */
 
 /* General */
 
-:root{
+:root {
     --honewdew: #eefff0;
     --orange: #f06449;
     --mimipink: #FED4E7;
@@ -24,22 +25,103 @@
     padding: 0;
 }
 
-.dead-space{
+.dead-space {
     content: "";
 }
+
+.main-content::before {
+    content: "";
+    z-index: 9000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png');
+    animation: .66s infinite noise;
+    pointer-events: none;
+}
+
+@keyframes noise {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: -5% -10%;
+    }
+
+    20% {
+        background-position: -15% 5%;
+    }
+
+    30% {
+        background-position: 7% -25%;
+    }
+
+    40% {
+        background-position: 20% 25%;
+    }
+
+    50% {
+        background-position: -25% 10%;
+    }
+
+    60% {
+        background-position: 15% 5%;
+    }
+
+    70% {
+        background-position: 0% 15%;
+    }
+
+    80% {
+        background-position: 25% 35%;
+    }
+
+    90% {
+        background-position: -10% 10%;
+    }
+}
+
 /* /General */
 
 /* Hero-section */
-.side-a{
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.side-a {
+    transition: ease-in-out .3s;
     background-color: var(--honewdew);
     height: 100vh;
+    background-image: linear-gradient(var(--charcoal-4) .1em, transparent .1em), linear-gradient(90deg, var(--charcoal-4) .1em, transparent .1em);
+    background-size: 2.5em 2.5em;
+    animation: AnimateBG 20s ease infinite;
 }
-.side-b{
+
+.side-a:hover{
+    transition: ease-in-out .3s;
+    background-size: 1.5em 1.5em;
+}
+
+.side-b {
     background-color: var(--charcoal-4);
     height: 100vh;
 }
 
-.hero-circle{
+.hero-circle {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -58,7 +140,7 @@ img.hero-img {
 /* /Hero-section */
 
 /* Chat Section */
-.container-chat{
+.container-chat {
     content: "";
     height: 90%;
     width: 85%;
@@ -66,40 +148,74 @@ img.hero-img {
     border-radius: 9px;
 }
 
-.wa-bg{
+.wa-bg {
     background-image: url(/assets/img/wa-bg.png);
 }
 
-.chat-header{
+.chat-header {
     background-color: var(--charcoal-2);
-    height: 6.66%;
+    height: 7.9%;
     border-radius: inherit;
 }
 
-.img-chat{
-    width: 45px;
+.img-chat {
+    width: 40px;
 }
 
-.msg-container{
+.msg-container {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
     gap: 12px;
 }
 
-.msg{
+.msg {
     padding: 5px 0px 0px 15px;
     margin-left: var(--margin-msg);
     background-color: var(--charcoal-1);
     height: 50px;
-    width: 363px;
+    width: 50%;
     border-radius: 50px;
     font-size: 0.775rem;
 }
 
-
-.msg.me{
+.msg.me {
     margin-left: 45%;
     height: 50px;
     background-color: #eefff0bf;
 }
+
+.send-container {
+    height: 90px;
+    position: relative;
+    align-self: flex-end;
+    background-color: var(--charcoal-2);
+    border-radius: inherit;
+}
+
+.circular-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-btn>i {
+    font-size: 1.5rem;
+}
+
 /* /Chat Section */
+
+/* Services Section */
+.services-marquee {
+    background-color: var(--charcoal-4);
+    height: 10vh;
+}
+
+.services {
+    height: 90vh;
+    background-color: var(--honewdew);
+}
+/* /Services Section */
