@@ -9,14 +9,18 @@
 /* General */
 
 :root {
-    --honewdew: #eefff0;
+    /*  --honewdew: #eefff0; */
     --orange: #f06449;
     --mimipink: #FED4E7;
-    --charcoal-4: #141115;
-    --charcoal-3: #312F31;
-    --charcoal-2: #4D4D4D;
-    --charcoal-1: #A3A6A1;
+    --charcoal-4: #1B2021;
+    --charcoal-3: #525657;
+    --charcoal-2: #898C8D;
+    --charcoal-1: #C0C2C3;
     --mintcream: #F8FFF4;
+    /* * Another color atempt */
+    --honewdew: #F6F7F8;
+    --cultured: #F6F7F8;
+    --earlblack: #1B2021;
     --margin-msg: 25px;
 }
 
@@ -27,6 +31,26 @@
 
 .dead-space {
     content: "";
+}
+
+.glassmorphism-light-1,
+.glassmorphism-dark-1 {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.glassmorphism-dark-1 {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .main-content::before {
@@ -43,6 +67,7 @@
 }
 
 @keyframes noise {
+
     0%,
     100% {
         background-position: 0 0;
@@ -111,7 +136,7 @@
     animation: AnimateBG 20s ease infinite;
 }
 
-.side-a:hover{
+.side-a:hover {
     transition: ease-in-out .3s;
     background-size: 1.5em 1.5em;
 }
@@ -144,7 +169,7 @@ img.hero-img {
     content: "";
     height: 90%;
     width: 85%;
-    background-color: var(--charcoal-3);
+    /* background-color: var(--charcoal-3); */
     border-radius: 9px;
 }
 
@@ -153,7 +178,6 @@ img.hero-img {
 }
 
 .chat-header {
-    background-color: var(--charcoal-2);
     height: 7.9%;
     border-radius: inherit;
 }
@@ -189,8 +213,9 @@ img.hero-img {
     height: 90px;
     position: relative;
     align-self: flex-end;
-    background-color: var(--charcoal-2);
+    /* background-color: var(--charcoal-2); */
     border-radius: inherit;
+    margin: 0;;
 }
 
 .circular-btn {
@@ -218,4 +243,5 @@ img.hero-img {
     height: 90vh;
     background-color: var(--honewdew);
 }
+
 /* /Services Section */
