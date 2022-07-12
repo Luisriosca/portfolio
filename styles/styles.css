@@ -273,6 +273,7 @@ img.hero-img {
     background-color: #2a2a2a;
     display: flex;
     align-items: center;
+    overflow: hidden !important;
 }
 
 .marquee > div{
@@ -280,10 +281,9 @@ img.hero-img {
     font-family: 'Raleway', sans-serif;
     font-size: 1.9rem;
     color: #E36414;
-    position: absolute;
-    text-overflow: ellipsis;
+    position: relative;
+    text-overflow: hidden;
     white-space: nowrap;
-    overflow: hidden;
     margin: 0;
     line-height: 50px;
     text-align: center;
@@ -296,6 +296,7 @@ img.hero-img {
     -moz-animation: marquee 17s linear infinite;
     -webkit-animation: marquee 17s linear infinite;
     animation: marquee 17s linear infinite;
+    
 }
 
 .marquee-text{
@@ -321,8 +322,19 @@ img.hero-img {
 }
 
 .services {
+    width: 100vw;
     height: 90vh;
     background-color: var(--honewdew);
 }
 
+.service{
+    background-color: var(--earlblack);
+    color: #eefff0;
+    border: #eefff0 9px solid;
+}
+.service.m {
+    border-left: 0;
+    color: #eefff0;
+    border: #eefff0 9px solid;
+}
 /* /Services Section */
