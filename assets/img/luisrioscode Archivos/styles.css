@@ -232,7 +232,7 @@ img.hero-img {
 }
 
 .circular-btn>i {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 }
 
 /* /Chat Section */
@@ -275,10 +275,10 @@ img.hero-img {
     align-items: center;
 }
 
-.marquee > div{
+.marquee>h3 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     color: #E36414;
     position: absolute;
     text-overflow: ellipsis;
@@ -290,29 +290,15 @@ img.hero-img {
     /* Starting position */
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
-    transform: translateX(100%); 
-    justify-content: center;
+    transform: translateX(100%);
     /* Apply animation to this element */
-    -moz-animation: marquee 17s linear infinite;
-    -webkit-animation: marquee 17s linear infinite;
-    animation: marquee 17s linear infinite;
+    -moz-animation: marquee 12s linear infinite;
+    -webkit-animation: marquee 12s linear infinite;
+    animation: marquee 12s linear infinite;
 }
 
-.marquee-text{
-    display: flex;
-}
-.marquee-text > *{
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-.rotate{
-    /* animation: rotation 8s infinite linear; */
-    margin: 0;
-    padding: 0;
-    -moz-animation: rotation 1s linear infinite;
-    -webkit-animation: rotation 1s linear infinite;
-    animation: rotation 1s linear infinite;
+.rotate {
+    animation: rotation 8s infinite linear;
 }
 
 .services-marquee {
