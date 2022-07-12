@@ -37,6 +37,9 @@
     content: "";
 }
 
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
 .glassmorphism-light-1,
 .glassmorphism-dark-1 {
     height: 250px;
@@ -136,6 +139,7 @@
     background-image: linear-gradient(var(--charcoal-4) .1em, transparent .1em), linear-gradient(90deg, var(--charcoal-4) .1em, transparent .1em);
     background-size: 2.5em 2.5em;
     animation: AnimateBG 20s ease infinite;
+    z-index: 888;
 }
 
 .side-a:hover {
@@ -146,6 +150,7 @@
 .side-b {
     background-color: var(--charcoal-4);
     height: 100vh;
+    z-index: 889;
 }
 
 .hero-circle {
@@ -276,7 +281,7 @@ img.hero-img {
     overflow: hidden !important;
 }
 
-.marquee > div{
+.marquee>div {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 1.9rem;
@@ -290,24 +295,25 @@ img.hero-img {
     /* Starting position */
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
-    transform: translateX(100%); 
+    transform: translateX(100%);
     justify-content: center;
     /* Apply animation to this element */
     -moz-animation: marquee 17s linear infinite;
     -webkit-animation: marquee 17s linear infinite;
     animation: marquee 17s linear infinite;
-    
+
 }
 
-.marquee-text{
+.marquee-text {
     display: flex;
 }
-.marquee-text > *{
+
+.marquee-text>* {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.rotate{
+.rotate {
     /* animation: rotation 8s infinite linear; */
     margin: 0;
     padding: 0;
@@ -327,14 +333,16 @@ img.hero-img {
     background-color: var(--honewdew);
 }
 
-.service{
+.service {
     background-color: var(--earlblack);
     color: #eefff0;
     border: #eefff0 9px solid;
 }
+
 .service.m {
     border-left: 0;
     color: #eefff0;
     border: #eefff0 9px solid;
 }
+
 /* /Services Section */
