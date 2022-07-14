@@ -43,8 +43,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12  msg-container pt-4">
-                        <div class="msg col-12">
+                    <div class="col-12  msg-container pt-4" v-for="msg in msgList">
+
+                        <msg-text v-bind:text="msg.text" v-bind:emitter="msg.emitter"></msg-text>
+                        <!-- <div class="msg col-12">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 🙀🙀🙀
                         </div>
                         <div class="msg me col-12">
@@ -58,7 +60,7 @@
                         </div>
                         <div class="msg me col-12">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 🙀🙀🙀
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="col-12 send-container glassmorphism-dark-1">
