@@ -9,7 +9,8 @@
 /* General */
 
 :root {
-    /*  --honewdew: #eefff0; */
+
+    /* * Utils */
     --orange: #f06449;
     --mimipink: #FED4E7;
     --charcoal-4: #1B2021;
@@ -200,7 +201,7 @@ img.hero-img {
 }
 
 .msg {
-    padding: 21px 13px 0px 19px;
+    padding: 18px 21px 0px 27px;
     margin-left: 2%;
     background-color: var(--charcoal-1);
     height: 95px;

@@ -21,22 +21,21 @@
                     <div class="hero-circle">
                         <img src="/assets/img/me.png" alt="luisrioscode" class="hero-img">
                     </div>
-                    <!-- <p class="text-center pt-4">Saludos🫣🧐</p> -->
                 </div>
             </div>
             <div class="col-12 col-lg-7 side-b wa-bg d-flex justify-content-center align-items-center shadow">
                 <div class="container glassmorphism-dark-1 m-4 p-0 row container-chat">
 
                     <div class="col-12 m-0 p-0 row p-2 chat-header glassmorphism-dark-1">
-                        <div class="col-2 col-lg-1 d-flex align-items-center">
+                        <div class="col-2 col-lg-1 d-flex align-items-center p-0">
                             <img src="/assets/img/user-im.png" alt="" class="img-chat">
                         </div>
-                        <div class="col-3 col-lg-3 d-flex align-items-center">
+                        <div class="col-3 col-lg-3 d-flex align-items-center p-0">
                             <p class="text-white mb-0">luisrioscode</p>
                         </div>
-                        <div class="col-4 col-lg-5 dead-space">
+                        <div class="col-4 col-lg-5 dead-space p-0">
                         </div>
-                        <div class="col-3 col-lg-3 d-flex justify-content-center align-items-center">
+                        <div class="col-3 col-lg-3 d-flex justify-content-center align-items-center p-0">
                             <a class="btn btn-link text-white p-0">
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </a>
@@ -44,23 +43,7 @@
                     </div>
 
                     <div class="col-12  msg-container pt-4" v-for="msg in msgList">
-
                         <msg-text v-bind:text="msg.text" v-bind:emitter="msg.emitter"></msg-text>
-                        <!-- <div class="msg col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 🙀🙀🙀
-                        </div>
-                        <div class="msg me col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni dolore. 😎
-                        </div>
-                        <div class="msg col-12">
-                            Sint ipsam nesciunt fugit fugiat, consequuntur placeat non. 🫣🧐
-                        </div>
-                        <div class="msg col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 🙀🙀🙀
-                        </div>
-                        <div class="msg me col-12">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 🙀🙀🙀
-                        </div> -->
                     </div>
 
                     <div class="col-12 send-container glassmorphism-dark-1">
@@ -100,12 +83,11 @@
             </div>
             <div class="col-12 ">
                 <div class="row services">
-                    <div class="col-6 col-lg-3 service">1</div>
-                    <div class="col-6 col-lg-3 service m">2</div>
-                    <div class="col-6 col-lg-3 service m">3</div>
-                    <div class="col-6 col-lg-3 service">4</div>
-                </div>
-                
+                    <div class="col-6  service ">1</div>
+                    <div class="col-6  service ">2</div>
+                    <div class="col-6  service ">3</div>
+                    <div class="col-6  service ">4</div>
+                </div> 
             </div>
         </section>
     </div>

@@ -25,6 +25,10 @@ new Vue({
                 emitter: "me",
                 text: "Me especializo en desarrollo de interfaces web y single page applications, me gusta mucho usar Vue y nodejs para mis proyectos  "
             },
+            {
+                emitter: "user",
+                text: "Me especializo en desarrollo de interfaces web y single page applications, me gusta mucho usar Vue y nodejs para mis proyectos  "
+            },
         ]
     },
     methods: {
