@@ -5,8 +5,7 @@ Vue.component('msg-text', {
     }, 
     template: '<div class="msg col-12" v-bind:class="emitter">{{ text }}</div>',
     created() {
-        // props are exposed on `this`
-        console.log(this.emitter)
+
     }
 });
 
@@ -29,9 +28,18 @@ new Vue({
                 emitter: "user",
                 text: "Me especializo en desarrollo de interfaces web y single page applications, me gusta mucho usar Vue y nodejs para mis proyectos  "
             },
-        ]
+        ], 
+
     },
     methods: {
-
+        writeMsg(evento){
+            console.log(evento.target.value);
+            const inputChatStr = evento.target.value;
+            const newMsg = {
+                emitter:'user',
+                text: inputChatStr
+            }
+            this.msgList.push(newMsg)
+        }
     }
 });
